@@ -59,6 +59,37 @@
     "keyframes-name-pattern": null,
     "number-max-precision": null,
     "scss/dollar-variable-empty-line-before": null,
-    "property-no-vendor-prefix": null
-  }
+    "property-no-vendor-prefix": null,
+    "media-query-no-invalid": null,
+    "max-nesting-depth": [2, { "ignore": ["pseudo-classes"] }],
+    "declaration-block-single-line-max-declarations": null,
+    "selector-max-compound-selectors": 2,
+    "selector-max-specificity": null,
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "declaration-block-no-shorthand-property-overrides": true,
+    "unit-disallowed-list": [
+      ["px"],
+      {
+        "ignoreProperties": {
+          "px": ["border", "box-shadow", "/^--/"]
+        }
+      }
+    ],
+
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["composes"]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.css"],
+      "rules": {
+        "selector-max-specificity": "0,3,0"
+      }
+    }
+  ]
 }
