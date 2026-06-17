@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "stylelint": "npx stylelint '**/*.scss'",
+    "stylelint:fix": "npx stylelint '**/*.scss' --fix",
     "preview": "vite preview"
   },
   "devDependencies": {
