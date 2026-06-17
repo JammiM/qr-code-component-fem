@@ -8,11 +8,15 @@
     "build": "vite build",
     "stylelint": "npx stylelint '**/*.scss'",
     "stylelint:fix": "npx stylelint '**/*.scss' --fix",
+    "eslint": "npx eslint './src/'",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "autoprefixer": "^10.5.0",
     "axe-core": "^4.12.1",
+    "eslint": "^10.5.0",
+    "globals": "^17.6.0",
     "postcss-import": "^16.1.1",
     "postcss-scss": "^4.0.9",
     "sass-embedded": "^1.100.0",
