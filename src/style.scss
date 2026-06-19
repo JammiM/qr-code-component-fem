@@ -3,8 +3,6 @@
   --slate-500: hsl(216deg, 15%, 48%);
   --slate-900: hsl(218deg, 44%, 22%);
   --white: hsl(0deg, 0%, 100%);
-  --shadow: hsl(0deg, 0%, 0%, 0.1) 0 10px 15px -3px,
-    hsl(0deg, 0%, 0%, 0.05) 0 4px 6px -2px;
   --ff-primary-font: "Outfit", sans-serif;
   --spacing: 1em;
   --radius: 0.75em;
@@ -38,9 +36,11 @@
   box-sizing: border-box;
   width: clamp(16.25rem, 14.93rem + 5.63vw, 20rem);
   text-align: center;
+  box-shadow: 0 2px 5px hsl(0deg, 0%, 0%, 0.1);
+  transition: box-shadow 0.3s ease-out;
 
   &:hover {
-    box-shadow: var(--shadow);
+    box-shadow: 0 10px 20px hsl(0deg, 0%, 0%, 0.2);
   }
 }
 
