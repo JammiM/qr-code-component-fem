@@ -6,8 +6,6 @@
 
   --shadow: rgb(0, 0, 0, 0.1) 0 10px 15px -3px,
     rgb(0, 0, 0, 0.05) 0 4px 6px -2px;
-  // --sans: system-ui, "Segoe UI", Roboto, sans-serif;
-  // --heading: system-ui, "Segoe UI", Roboto, sans-serif;
 
   --ff-primary-font: "Outfit", sans-serif;
 
@@ -19,6 +17,8 @@
 
   background: var(--slate-300);
 
+  font-optical-sizing: auto;
+  font-style: normal;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,20 +33,6 @@
   place-content: center;
   place-items: center;
 }
-
-// #center {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 25px;
-//   place-content: center;
-//   place-items: center;
-//   flex-grow: 1;
-
-//   @media (width <= 1024px) {
-//     padding: 32px 20px 24px;
-//     gap: 18px;
-//   }
-// }
 
 .qr_comp__card {
   background-color: var(--white);
@@ -76,7 +62,6 @@
 .qr_comp__heading {
   margin: 24px 0 16px 0;
   font-size: clamp(1.1875rem, 1.12rem + 0.28vw, 1.375rem);
-
   font-weight: var(--fw-bold);
   line-height: 1.3;
 }
@@ -92,6 +77,4 @@
 .qr_comp__heading,
 .qr_comp__paragraph {
   font-family: var(--ff-primary-font);
-  font-optical-sizing: auto;
-  font-style: normal;
 }
