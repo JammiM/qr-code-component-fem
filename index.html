@@ -15,9 +15,30 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/scss/reset.scss" />
+    <link rel="stylesheet" href="./src/style.scss" />
   </head>
   <body>
-    <main id="app"></main>
-    <script type="module" src="/src/main.js"></script>
+    <main id="app">
+      <article class="qr-code-card">
+        <picture class="qr-code-card__holder">
+          <img
+            class="qr-code-card__image"
+            fetchpriority="high"
+            src="src/assets/image-qr-code.png"
+            alt="QR code"
+            srcset=""
+          />
+        </picture>
+        <h1 class="qr-code-card__heading">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="qr-code-card__paragraph">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </article>
+    </main>
+    <script type="module" src="/src/js/axe-TestingHandler.js"></script>
   </body>
 </html>
