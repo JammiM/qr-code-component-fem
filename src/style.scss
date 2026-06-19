@@ -12,7 +12,7 @@
   --ff-primary-font: "Outfit", sans-serif;
 
   --spacing: 1em;
-  --radius: 1.5em;
+  --radius: 0.75em;
   --paragraph-size: 0.938em;
   --fw-light: 400;
   --fw-bold: 700;
@@ -49,80 +49,44 @@
 // }
 
 .qr_comp__card {
-  padding: calc(var(--spacing) + 0.25em);
-  border-radius: var(--radius);
   background-color: var(--white);
-  // width: 320px;
-  // width: 80%;
-
-  display: grid;
-  place-items: center;
+  padding: clamp(0.75rem, 0.66rem + 0.38vw, 1rem);
+  border-radius: 1.25rem;
+  box-sizing: border-box;
+  width: clamp(16.25rem, 14.93rem + 5.63vw, 20rem);
   text-align: center;
-  gap: var(--spacing);
 
-  width: clamp(280px, 90vw, 320px);
-
-  // @media (width >= 768px) {
-  //   width: 60%;
-  // }
-
-  // @media (width >= 992px) {
-  //   width: 320px;
-  // }
   &:hover {
     box-shadow: var(--shadow);
   }
 }
 
 .qr_comp__holder {
-  width: 100%;
-  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .qr_comp__image {
-  border-radius: calc(var(--radius) / 2);
+  border-radius: var(--radius);
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  aspect-ratio: 1 / 1;
 }
 
 .qr_comp__heading {
-  margin-top: 2.5%;
-  // font-size: 1.3em;
+  margin: 24px 0 16px 0;
+  font-size: clamp(1.1875rem, 1.12rem + 0.28vw, 1.375rem);
+
   font-weight: var(--fw-bold);
-  // line-height: 1;
-  // font-stretch: condensed;
-  // font-stretch: 50%;
-
-  // font-size: clamp(1.6rem, 8vw, 1.7rem);
-  // margin: 0; /* Removes default browser spacing */
-  // white-space: nowrap;
-
-  // letter-spacing: 0.2em;
-  // font-size: calc(1.25rem + 1vw);
-  // font-size: clamp(1.5rem, 1rem + 1vw, 3rem);
-  // font-size: clamp(1.6rem, 0.8rem + 1vw, 1.5rem);
-  // @media (width >= 768px) {
-  //   font-size: 1.7em;
-  // }
+  line-height: 1.3;
 }
 
 .qr_comp__paragraph {
-  // font-size: calc(0.5rem + 1vw);
-  // font-size: clamp(0.5rem, 0.8rem + 1vw, 1rem);
-  // 0.938
-
-  // font-size: clamp(0.938rem, 8vw, 1rem);
-
-  // font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
-
+  font-size: clamp(0.875rem, 0.85rem + 0.09vw, 0.9375rem);
+  padding: 0 16px;
   font-weight: var(--fw-light);
   color: var(--slate-500);
-
-  // @media (width < 768px) {
-  //   font-size: calc(var(--paragraph-size) + 0.4em);
-  //   line-height: 1.5;
-  // }
+  line-height: 1.4;
 }
 
 .qr_comp__heading,
