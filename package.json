@@ -14,7 +14,8 @@
     "stylelint": "npx stylelint '**/*.scss'",
     "stylelint:fix": "npx stylelint '**/*.scss' --fix",
     "eslint": "npx eslint './src/'",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:html": "html-validate \"**/*.html\""
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
