@@ -1,14 +1,11 @@
 :root {
-  --slate-300: hsl(212, 45%, 89%);
-  --slate-500: hsl(216, 15%, 48%);
-  --slate-900: hsl(218, 44%, 22%);
-  --white: hsl(0, 0%, 100%);
-
-  --shadow: rgb(0, 0, 0, 0.1) 0 10px 15px -3px,
-    rgb(0, 0, 0, 0.05) 0 4px 6px -2px;
-
+  --slate-300: hsl(212deg, 45%, 89%);
+  --slate-500: hsl(216deg, 15%, 48%);
+  --slate-900: hsl(218deg, 44%, 22%);
+  --white: hsl(0deg, 0%, 100%);
+  --shadow: hsl(0deg, 0%, 0%, 0.1) 0 10px 15px -3px,
+    hsl(0deg, 0%, 0%, 0.05) 0 4px 6px -2px;
   --ff-primary-font: "Outfit", sans-serif;
-
   --spacing: 1em;
   --radius: 0.75em;
   --paragraph-size: 0.938em;
@@ -34,7 +31,7 @@
   place-items: center;
 }
 
-.qr_comp__card {
+.qr-code-card {
   background-color: var(--white);
   padding: clamp(0.75rem, 0.66rem + 0.38vw, 1rem);
   border-radius: 1.25rem;
@@ -47,26 +44,26 @@
   }
 }
 
-.qr_comp__holder {
+.qr-code-card__holder {
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
-.qr_comp__image {
+.qr-code-card__image {
   border-radius: var(--radius);
   width: 100%;
   aspect-ratio: 1 / 1;
 }
 
-.qr_comp__heading {
+.qr-code-card__heading {
   margin: 24px 0 16px 0;
   font-size: clamp(1.1875rem, 1.12rem + 0.28vw, 1.375rem);
   font-weight: var(--fw-bold);
   line-height: 1.3;
 }
 
-.qr_comp__paragraph {
+.qr-code-card__paragraph {
   font-size: clamp(0.875rem, 0.85rem + 0.09vw, 0.9375rem);
   padding: 0 16px;
   font-weight: var(--fw-light);
@@ -74,7 +71,7 @@
   line-height: 1.4;
 }
 
-.qr_comp__heading,
-.qr_comp__paragraph {
+.qr-code-card__heading,
+.qr-code-card__paragraph {
   font-family: var(--ff-primary-font);
 }
