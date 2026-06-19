@@ -4,12 +4,12 @@ import "./js/axe-TestingHandler";
 import qrCodeImage from "./assets/image-qr-code.png";
 
 document.querySelector("#app").innerHTML = `
-<article>
-  <picture>
-    <img src="${qrCodeImage}" alt="" srcset="" />
+<article class="qr_comp__card">
+  <picture class="qr_comp__holder">
+    <img class="qr_comp__image" src="${qrCodeImage}" alt="" srcset="" />
   </picture>
-  <h1>Improve your front-end skills by building projects</h1>
-  <p>
+  <h1 class="qr_comp__heading" >Improve your front-end skills by building projects</h1>
+  <p class="qr_comp__paragraph" >
     Scan the QR code to visit Frontend Mentor and take your coding skills
     to the next level
   </p>
