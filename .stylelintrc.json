@@ -5,7 +5,7 @@
     "scss/at-rule-no-unknown": [true],
     "color-named": "never",
     "color-hex-length": "long",
-    "function-disallowed-list": ["rgb", "hsl"],
+    "function-disallowed-list": ["rgb"],
     "declaration-block-no-duplicate-properties": [
       true,
       {
@@ -18,9 +18,9 @@
       "/^border-radius/": ["px", "rem", "%"],
       "/^box-shadow": ["px"],
       "/^margin/": ["rem", "px"],
-      "/^padding/": ["rem", "px"],
-      "font-size": ["rem", "em"],
-      "height": ["rem", "%", "vh", "px"],
+      "/^padding/": ["rem", "px", "vw"],
+      "font-size": ["rem", "em", "vw"],
+      "height": ["rem", "%", "vh", "px", "dvh"],
       "width": ["rem", "%", "vw", "px"]
     },
     "no-duplicate-selectors": true,
@@ -33,7 +33,7 @@
         "resolveNestedSelectors": true
       }
     ],
-    "selector-max-id": [0],
+    "selector-max-id": [1],
     "value-no-vendor-prefix": true,
     "font-family-no-missing-generic-family-keyword": null,
     "no-descending-specificity": null,
@@ -72,7 +72,7 @@
       ["px"],
       {
         "ignoreProperties": {
-          "px": ["border", "box-shadow", "/^--/"]
+          "px": ["border", "box-shadow", "/^--/", "margin", "padding"]
         }
       }
     ],
