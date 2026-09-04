@@ -9,10 +9,10 @@
   --paragraph-size: 0.938em;
   --fw-light: 400;
   --fw-bold: 700;
+  --card-shadow: 0 2px 5px hsl(0deg, 0%, 0%, 0.1);
+  --hover-card-shadow: 0 10px 20px hsl(0deg, 0%, 0%, 0.2);
 
   background: var(--slate-300);
-
-  --card-shadow: 0 2px 5px hsl(0deg, 0%, 0%, 0.1);
 
   font-optical-sizing: auto;
   font-style: normal;
@@ -42,7 +42,7 @@
   transition: box-shadow 0.3s ease-out;
 
   &:hover {
-    box-shadow: 0 10px 20px hsl(0deg, 0%, 0%, 0.2);
+    box-shadow: var(--hover-card-shadow);
   }
 }
 
