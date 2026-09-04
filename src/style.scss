@@ -12,6 +12,8 @@
 
   background: var(--slate-300);
 
+  --card-shadow: 0 2px 5px hsl(0deg, 0%, 0%, 0.1);
+
   font-optical-sizing: auto;
   font-style: normal;
   font-synthesis: none;
@@ -36,7 +38,7 @@
   box-sizing: border-box;
   width: clamp(16.25rem, 14.93rem + 5.63vw, 20rem);
   text-align: center;
-  box-shadow: 0 2px 5px hsl(0deg, 0%, 0%, 0.1);
+  box-shadow: var(--card-shadow);
   transition: box-shadow 0.3s ease-out;
 
   &:hover {
