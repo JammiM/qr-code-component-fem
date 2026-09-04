@@ -19,7 +19,7 @@
       "/^border(?!.*-radius$)/": ["px", "%"],
       "/^border-radius/": ["px", "rem", "%"],
       "/^box-shadow": ["px"],
-      "/^margin/": ["rem", "px"],
+      "/^margin/": ["rem", "px", "vw"],
       "/^padding/": ["rem", "px", "vw"],
       "font-size": ["rem", "em", "vw"],
       "height": ["rem", "%", "vh", "px", "dvh"],
