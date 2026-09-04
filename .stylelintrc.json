@@ -26,7 +26,8 @@
       "width": ["rem", "%", "vw", "px"]
     },
     "declaration-property-value-disallowed-list": {
-      "margin": ["/\\d+px/"]
+      "margin": ["/\\d+px/"],
+      "padding": ["/\\d+px/"]
     },
     "no-duplicate-selectors": true,
     "scss/dollar-variable-pattern": "^[a-z\\d](?:[a-z\\d]|-(?=[a-z\\d]))*$",
